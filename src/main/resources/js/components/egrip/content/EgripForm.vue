@@ -112,10 +112,5 @@
         padding: 0;
     }
 
-    .el-collapse-item {
-        font-family: "Open Sans", sans-serif;
-        font-size: 40px;
-        margin: auto;
-    }
 
 </style>

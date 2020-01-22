@@ -27,8 +27,8 @@
     }
 
     div {
-        font-family: "Open Sans", sans-serif;
-        font-size: 120% !important;
+        font-family: 'PdfIntextCondPro-Bold';
+        font-size: 100% !important;
     }
 
 </style>
