@@ -1,6 +1,6 @@
 <template>
         <el-collapse v-model="activeNames">
-            <el-collapse-item title="Форма поиска ЕГРИП" name="1">
+            <el-collapse-item title="Форма поиска ЕГРЮЛ" name="1">
                 <el-form :model="ruleForm" ref="ruleForm"  >
                     <el-form-item prop="name">
                         <el-form-item label="Название организации:">

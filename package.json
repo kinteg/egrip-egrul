@@ -19,7 +19,7 @@
     "i": "^0.3.6",
     "vue": "^2.6.11",
     "vue-resource": "^1.5.1",
-    "vue-router": "^3.1.3",z
+    "vue-router": "^3.1.3",
     "vue-style-loader": "^4.1.2"
   },
   "devDependencies": {
@@ -39,9 +39,5 @@
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
   },
-  "description": "Egrip-Egrul information system",
-  "bugs": {
-    "url": "https://github.com/kinteg/egrip-egrul/issues"
-  },
-  "homepage": "https://github.com/kinteg/egrip-egrul#readme"
+  "description": "Egrip-Egrul information system"
 }
