@@ -23,4 +23,10 @@
 </script>
 
 <style scoped>
+    .el-collapse-item {
+        font-family: "Open Sans", sans-serif;
+        font-size: 40px;
+        margin: auto;
+        color: #000000;
+    }
 </style>

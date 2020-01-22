@@ -22,8 +22,8 @@
         max-width: 950px;
         position: relative;
         display: block;
-        -moz-box-sizing: border-box; /* Для Firefox */
-        box-sizing: border-box; /* Ширина блока с полями */
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     a {
