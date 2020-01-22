@@ -3,23 +3,20 @@
 </template>
 
 <script>
-    import CustomTable from "../../general/Table.vue";
+    import CustomTable from "../../../general/Table.vue";
 
     export default {
-        name: "Pf",
+        name: "TaxAuthority",
         components: {CustomTable},
         props: ['ipData'],
 
         data() {
             return {
-                title: 'Сведения о регистрации в отделениях пенсионного фонда (ПФ)',
-                name: 'Pf',
+                title: 'Сведения о постановке индивидуального предпринимателя на учёт в налоговом органе',
+                name: 'TaxAuthority',
                 tableData: [{
-                    name: 'Регистрационный номер в фонде',
-                    item: this.ipData.regNom,
-                }, {
-                    name: 'Наименование территориального органа фонда, в котором зарегистрировано ЮЛ',
-                    item: this.ipData.pf.name,
+                    name: 'Налоговый орган',
+                    item: this.ipData.mns.name,
                 }, {
                     name: 'Дата постановки на учёт',
                     item: this.ipData.dtStart,

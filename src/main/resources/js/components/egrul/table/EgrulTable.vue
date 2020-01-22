@@ -4,7 +4,7 @@
         <full-info v-if="ulData.fl.length !== 0" :ulData="ulData.fl"/>
         <license v-if="ulData.licenzs.length !== 0" :ulData="ulData.licenzs"/>
         <changes v-if="ulData.gosRegs.length !== 0" :ulData="ulData.gosRegs"/>
-        <mns :ulData="ulData.mns"/>
+        <mns v-if="ulData.mns != null" :ulData="ulData.mns"/>
         <foms v-if="ulData.foms != null" :ulData="ulData.foms"/>
         <fss v-if="ulData.fss != null" :ulData="ulData.fss"/>
         <pf v-if="ulData.pf != null" :ulData="ulData.pf"/>

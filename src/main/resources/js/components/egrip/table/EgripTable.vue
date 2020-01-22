@@ -1,8 +1,8 @@
 <template>
     <el-collapse v-if="ipData != null">
         <general :ipData="ipData"/>
-        <economic-activity v-if="ipData.okved != null" :ipData="ipData.okved"/>
-        <changes v-if="ipData.gosReg != null" :ipData="ipData.gosReg"/>
+        <economic-activity v-if="ipData.okved.length !== 0" :ipData="ipData.okved"/>
+        <changes v-if="ipData.gosReg.length !== 0" :ipData="ipData.gosReg"/>
         <tax-authority v-if="ipData.mns != null" :ipData="ipData.mns"/>
         <foms v-if="ipData.foms != null" :ipData="ipData.foms"/>
         <fss v-if="ipData.fss != null" :ipData="ipData.fss"/>
@@ -12,13 +12,13 @@
 
 <script>
     import {AXIOS} from "../../../AXIOS/http-common";
-    import General from "./General.vue";
-    import EconomicActivity from "./EconomicActivity.vue";
-    import Changes from "./Changes.vue";
-    import TaxAuthority from "./TaxAuthority.vue";
-    import Foms from "./Foms.vue";
-    import Fss from "./Fss.vue";
-    import Pf from "./Pf.vue";
+    import General from "./components/General.vue";
+    import EconomicActivity from "./components/EconomicActivity.vue";
+    import Changes from "./components/Changes.vue";
+    import TaxAuthority from "./components/TaxAuthority.vue";
+    import Foms from "./components/Foms.vue";
+    import Fss from "./components/Fss.vue";
+    import Pf from "./components/Pf.vue";
 
     export default {
         name: "EgripTable",

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import CustomTable from "../../general/Table.vue";
+    import CustomTable from "../../../general/Table.vue";
 
     export default {
         name: "Fss",

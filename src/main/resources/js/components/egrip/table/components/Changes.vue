@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import BigTable from "../../general/BigTable.vue";
+    import BigTable from "../../../general/BigTable.vue";
 
     export default {
         name: "Changes",
