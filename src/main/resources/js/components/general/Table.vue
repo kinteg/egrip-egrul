@@ -24,8 +24,8 @@
 <style scoped>
     .el-collapse-item {
         font-family: "Open Sans", sans-serif;
-        font-size: 40px;
+        font-size: 100px;
         margin: auto;
-        color: #000000;
+        color: #ff0006;
     }
 </style>
