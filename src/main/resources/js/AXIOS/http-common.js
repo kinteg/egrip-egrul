@@ -1,15 +1,16 @@
 import axios from 'axios'
+import nprogress from 'nprogress'
 
 export const AXIOS = axios.create({
     baseURL: `/api`
 });
 
 AXIOS.interceptors.request.use(config => {
-    NProgress.start();
+    nprogress.start();
     return config
 });
 
 AXIOS.interceptors.response.use(response => {
-    NProgress.done();
+    nprogress.done();
     return response
 });

@@ -27,7 +27,7 @@
                     name: 'Пол',
                     item: this.ipData.name.sex === 1 ? 'мужской' : 'женский',
                 }, {
-                    name: 'ГРН',
+                    name: 'ОГРН',
                     item: this.ipData.ogrn,
                 }, {
                     name: 'ИНН',
@@ -44,7 +44,10 @@
                 }, {
                     name: 'Дата внесения записи:',
                     item: this.ipData.citizen.dtStart,
-                }]
+                }, {
+                    name: 'Статус:',
+                    item: this.ipData.status.name,
+                }, ]
 
             }
         },

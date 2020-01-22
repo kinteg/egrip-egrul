@@ -1,6 +1,5 @@
 package ru.iac.egripegrul.controller;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -16,7 +15,7 @@ public class EgrulController {
 
     private final UlService ulService;
 
-    public EgrulController(@Qualifier("ULServiceJPA") UlService ulService) {
+    public EgrulController(UlService ulService) {
         this.ulService = ulService;
     }
 
@@ -40,7 +39,6 @@ public class EgrulController {
             @RequestParam(defaultValue = "") String regEnd,
             @PageableDefault(sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable
     ) {
-
         UlFilter filter = new UlFilter
                 (
                         name,
@@ -49,7 +47,6 @@ public class EgrulController {
                         regStart,
                         regEnd
                 );
-
         return ulService.findByFilter(filter, pageable);
     }
 

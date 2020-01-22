@@ -9,6 +9,4 @@ public interface UlService extends IPULService<UL> {
 
     Page<UL> findByFilter(UlFilter filter, Pageable pageable);
 
-    
-
 }

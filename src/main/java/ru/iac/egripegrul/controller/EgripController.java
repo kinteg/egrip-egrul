@@ -1,6 +1,5 @@
 package ru.iac.egripegrul.controller;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -17,7 +16,7 @@ public class EgripController {
     private final IPServiceJPA ipService;
 
 
-    public EgripController(@Qualifier("IPServiceJPA")IPServiceJPA ipService) {
+    public EgripController(IPServiceJPA ipService) {
         this.ipService = ipService;
     }
 

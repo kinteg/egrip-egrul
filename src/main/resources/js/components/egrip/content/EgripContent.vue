@@ -49,7 +49,6 @@
         methods: {
 
             onCurrentChange(value) {
-
                 this.currentPage = value;
 
                 AXIOS.get(this.url + '&page=' + (value - 1))
@@ -62,7 +61,6 @@
             },
 
             onSizeChange(value) {
-
                 this.pageSize = value;
                 this.currentPage = 1;
 
@@ -76,7 +74,6 @@
             },
 
             loadData(ip) {
-
                 this.createUrl(ip);
 
                 AXIOS.get(this.url)
@@ -102,7 +99,8 @@
                     (ip.ogrn !== undefined ? "&ogrn=" + ip.ogrn : '') +
                     (ip.inn !== undefined ? "&inn=" + ip.inn : '') +
                     (ip.regStart !== undefined ? "&regStart=" + ip.regStart : '') +
-                    (ip.regEnd !== undefined ? "&regEnd=" + ip.regEnd : '');
+                    (ip.regEnd !== undefined ? "&regEnd=" + ip.regEnd : '') +
+                    (this.pageSize !== undefined ? "&size=" + this.pageSize : '');
             }
 
         },

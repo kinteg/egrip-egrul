@@ -54,7 +54,7 @@
                     name: '',
                 },
                 ipData: '',
-                activeNames: ['1']
+                activeNames: '1'
             };
         },
         methods: {

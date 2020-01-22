@@ -100,7 +100,8 @@
                     (ul.ogrn !== undefined ? "&ogrn=" + ul.ogrn : '') +
                     (ul.inn !== undefined ? "&inn=" + ul.inn : '') +
                     (ul.regStart !== undefined ? "&regStart=" + ul.regStart : '') +
-                    (ul.regEnd !== undefined ? "&regEnd=" + ul.regEnd : '');
+                    (ul.regEnd !== undefined ? "&regEnd=" + ul.regEnd : '') +
+                    (this.pageSize !== undefined ? "&size=" + this.pageSize : '');
             }
 
         },

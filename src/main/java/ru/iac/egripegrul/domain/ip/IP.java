@@ -1,11 +1,9 @@
 package ru.iac.egripegrul.domain.ip;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Getter;
 import ru.iac.egripegrul.domain.sp.RegOrg;
 import ru.iac.egripegrul.domain.sp.Stat;
-import ru.iac.egripegrul.domain.view.Views;
 
 import javax.persistence.*;
 import java.util.List;
@@ -17,23 +15,18 @@ public class IP {
 
     @Id
     @Column(name = "idip")
-    @JsonView(Views.MainPage.class)
     private String id;
 
     @Column(name = "inn")
-    @JsonView(Views.MainPage.class)
     private String inn;
     @Column(name = "ogrn")
-    @JsonView(Views.MainPage.class)
     private String ogrn;
 
     @OneToOne(mappedBy = "ip")
-    @JsonView(Views.MainPage.class)
     private NameIP name;
 
     @OneToOne
     @JoinColumn(name = "idstatus")
-    @JsonView(Views.MainPage.class)
     private Stat status;
 
     @OneToOne
@@ -42,7 +35,6 @@ public class IP {
 
     @OneToOne(mappedBy = "ip")
     @JsonManagedReference
-    @JsonView(Views.MainPage.class)
     private Citizen citizen;
 
     @OneToOne(mappedBy = "ip")

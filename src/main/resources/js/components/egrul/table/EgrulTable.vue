@@ -1,7 +1,7 @@
 <template>
     <el-collapse v-if="ulData != null">
         <general :ulData="ulData"/>
-        <full-info v-if="ulData.fl.length !== 0" :ulData="ulData.fl"/>
+        <full-name v-if="ulData.fl.length !== 0" :ulData="ulData.fl"/>
         <license v-if="ulData.licenzs.length !== 0" :ulData="ulData.licenzs"/>
         <changes v-if="ulData.gosRegs.length !== 0" :ulData="ulData.gosRegs"/>
         <mns v-if="ulData.mns != null" :ulData="ulData.mns"/>
@@ -14,7 +14,7 @@
 <script>
     import {AXIOS} from "../../../AXIOS/http-common";
     import General from "./components/General.vue";
-    import FullInfo from "./components/FullName.vue";
+    import FullName from "./components/FullName.vue";
     import License from "./components/License.vue";
     import Changes from "./components/Changes.vue";
     import Mns from "./components/Mns.vue";
@@ -25,7 +25,7 @@
 
     export default {
         name: "EgrulTable",
-        components: {Pf, Fss, Foms, Mns, Changes, License, FullInfo, General},
+        components: {Pf, Fss, Foms, Mns, Changes, License, FullName, General},
         data() {
             return {
                 ulData: null

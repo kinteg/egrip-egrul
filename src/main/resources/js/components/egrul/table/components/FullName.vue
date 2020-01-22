@@ -6,14 +6,14 @@
 
     import BigTable from "../../../general/BigTable.vue";
     export default {
-        name: "FullInfo",
+        name: "FullName",
         components: {BigTable},
         props: ['ulData'],
         
         data() {
             return {
                 title: 'ФИО руководителей',
-                name: 'FullInfo',
+                name: 'FullName',
             }
         },
 

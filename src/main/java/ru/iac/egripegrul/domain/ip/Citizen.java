@@ -2,11 +2,9 @@ package ru.iac.egripegrul.domain.ip;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Getter;
 import ru.iac.egripegrul.domain.sp.OKSM;
 import ru.iac.egripegrul.domain.sp.VidCitizen;
-import ru.iac.egripegrul.domain.view.Views;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -26,7 +24,6 @@ public class Citizen {
 
     @OneToOne
     @JoinColumn(name = "oksm")
-    @JsonView(Views.MainPage.class)
     private OKSM oksm;
 
     @OneToOne

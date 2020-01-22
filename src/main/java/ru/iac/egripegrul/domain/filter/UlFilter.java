@@ -17,7 +17,7 @@ public class UlFilter {
         this.name = name;
         this.ogrn = ogrn;
         this.inn = inn;
-        this.regStart = regStart.equals("") ? LocalDate.of(1970, 1, 1) : LocalDate.parse(regStart);
-        this.regEnd = regEnd.equals("") ? LocalDate.of(2070, 1, 1) : LocalDate.parse(regEnd);
+        this.regStart = regStart.equals("") || regStart.equals("null") ? LocalDate.of(1970, 1, 1) : LocalDate.parse(regStart);
+        this.regEnd = regEnd.equals("") || regEnd.equals("null") ? LocalDate.of(2070, 1, 1) : LocalDate.parse(regEnd);
     }
 }

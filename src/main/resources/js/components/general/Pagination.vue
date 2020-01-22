@@ -3,11 +3,11 @@
             class="pager"
             background
             layout="total, sizes, prev, pager, next, jumper"
-            :page-sizes="[10, 20, 30, 40]"
+            :page-sizes="pageSizes"
             :page-size="pageSize"
             :page-count="totalPages"
             :current-page="currentPage"
-            :pager-count="5"
+            :pager-count="pagerCount"
             @size-change="onSizeChange"
             @current-change="onCurrentChange"
             :total="totalElements">

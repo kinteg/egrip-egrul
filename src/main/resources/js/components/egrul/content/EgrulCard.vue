@@ -3,7 +3,7 @@
         <el-card v-for="ul in ulData" class="box-card"
                  :key="ul.id">
             <div slot="header">
-                <router-link :to="'/egrul/' + ul.id"><span class="name">{{ul.name.fullName}}</span></router-link>
+                <router-link :to="'/egrul/' + ul.id" class="card-title"><span style="color: #1265a8">{{ul.name.fullName}}</span></router-link>
             </div>
             <div class="text item" >
                 <a>ОГРН: {{ul.ogrn}}, ИНН: {{ul.inn}}</a><a v-if="ul.adr.telefon !== ''">, Телефон: {{ul.adr.telefon}} </a>
@@ -20,9 +20,7 @@
 </script>
 
 <style scoped>
-    a {
-        font-family: "Open Sans", sans-serif;
-        font-size: 16px;
+    .card-title {
         text-decoration: none;
     }
 
@@ -33,12 +31,6 @@
     .box-card {
         width: auto;
         margin: 10px;
-    }
-
-    .name {
-        color: #1265a8;
-        font-family: 'PdfIntextCondPro-Bold', monospace;
-        font-size: 22px;
     }
 
     .el-card {

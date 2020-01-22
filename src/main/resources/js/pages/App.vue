@@ -26,5 +26,8 @@
         box-sizing: border-box; /* Ширина блока с полями */
     }
 
-
+    a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+    }
 </style>

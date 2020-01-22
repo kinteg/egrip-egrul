@@ -1,5 +1,5 @@
 <template>
-    <el-collapse v-if="ipData != null">
+    <el-collapse v-if="ipData != null" v-model="activeNames">
         <general :ipData="ipData"/>
         <economic-activity v-if="ipData.okved.length !== 0" :ipData="ipData.okved"/>
         <changes v-if="ipData.gosReg.length !== 0" :ipData="ipData.gosReg"/>
@@ -25,7 +25,8 @@
         components: {Pf, Fss, Foms, TaxAuthority, Changes, EconomicActivity, General},
         data() {
             return {
-                ipData: null
+                ipData: null,
+                activeNames: "General"
             }
         },
 

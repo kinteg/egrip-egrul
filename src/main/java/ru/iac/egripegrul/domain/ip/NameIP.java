@@ -2,10 +2,8 @@ package ru.iac.egripegrul.domain.ip;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Getter;
 import lombok.Setter;
-import ru.iac.egripegrul.domain.view.Views;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -21,13 +19,10 @@ public class NameIP {
     private String id;
 
     @Column(name = "famfl")
-    @JsonView(Views.MainPage.class)
     private String surname;
     @Column(name = "namefl")
-    @JsonView(Views.MainPage.class)
     private String name;
     @Column(name = "otchfl")
-    @JsonView(Views.MainPage.class)
     private String middleName;
 
     @Column(name = "dtstart")
