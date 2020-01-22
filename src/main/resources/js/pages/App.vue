@@ -27,7 +27,7 @@
     }
 
     div {
-        font-family: 'PdfIntextCondPro-Bold';
+        font-family: 'PdfIntextCondPro-Bold', sans-serif;
         font-size: 100% !important;
     }
 

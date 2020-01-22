@@ -85,7 +85,6 @@
         color: #fff;
         cursor: pointer;
         font-size: 120%;
-        font-family: 'PdfIntextCondPro-Bold';
         letter-spacing: 1px;
         line-height: 20px;
         outline: none;

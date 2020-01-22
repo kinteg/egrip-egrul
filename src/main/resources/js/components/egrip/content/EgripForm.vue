@@ -94,7 +94,6 @@
         color: #fff;
         cursor: pointer;
         font-size: 16px;
-        font-family: 'PdfIntextCondPro-Bold';
         letter-spacing: 1px;
         line-height: 20px;
         outline: none;
