@@ -1,6 +1,6 @@
 <template>
         <el-collapse v-model="activeNames">
-            <el-collapse-item title="Форма поиска ЕГРЮЛ" name="1">
+            <el-collapse-item title="Форма поиска ЕГРЮЛ" name="1" style="font-size: 50px !important;">
                 <el-form :model="ruleForm" ref="ruleForm"  >
                     <el-form-item prop="name">
                         <el-form-item label="Название организации:">
@@ -84,7 +84,7 @@
         padding: 13px 32px;
         color: #fff;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 120%;
         font-family: 'PdfIntextCondPro-Bold';
         letter-spacing: 1px;
         line-height: 20px;
@@ -103,10 +103,5 @@
         padding: 0;
     }
 
-    .el-collapse-item {
-        font-family: "Open Sans", sans-serif;
-        font-size: 40px;
-        margin: auto;
-    }
 
 </style>

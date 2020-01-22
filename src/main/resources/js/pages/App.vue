@@ -26,8 +26,9 @@
         box-sizing: border-box;
     }
 
-    a {
+    div {
         font-family: "Open Sans", sans-serif;
-        font-size: 50px;
+        font-size: 120% !important;
     }
+
 </style>

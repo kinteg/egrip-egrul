@@ -22,10 +22,9 @@
 </script>
 
 <style scoped>
-    .el-collapse-item {
+    .el-table--mini, .el-table--small, .el-table__expand-icon {
         font-family: "Open Sans", sans-serif;
-        font-size: 100px;
+        font-size: 120%;
         margin: auto;
-        color: #ff0006;
     }
 </style>
