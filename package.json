@@ -2,7 +2,10 @@
   "name": "egripegrul",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:kinteg/egrip-egrul.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kinteg/egrip-egrul.git"
+  },
   "author": "kinteg <zeroxchao@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -35,5 +38,10 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "description": "Egrip-Egrul information system",
+  "bugs": {
+    "url": "https://github.com/kinteg/egrip-egrul/issues"
+  },
+  "homepage": "https://github.com/kinteg/egrip-egrul#readme"
 }
