@@ -20,6 +20,7 @@
                     @onCurrentChange="onCurrentChange"
                     @onSizeChange="onSizeChange"/>
         </div>
+        <a v-if="totalPages === -1">Простите, таких данных не обнаружено</a>
     </div>
 </template>
 

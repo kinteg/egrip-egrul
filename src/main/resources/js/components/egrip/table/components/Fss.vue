@@ -22,10 +22,10 @@
                     item: this.ipData.fss.name,
                 }, {
                     name: 'Дата постановки на учёт',
-                    item: this.ipData.dtstart,
+                    item: this.ipData.dtStart,
                 }, {
                     name: 'Дата снятия с учёта',
-                    item: this.ipData.dtend,
+                    item: this.ipData.dtEnd,
                 }]
 
             }
