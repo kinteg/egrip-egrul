@@ -75,7 +75,7 @@
 
             loadData(ip) {
                 this.createUrl(ip);
-
+                this.currentPage = 1;
                 AXIOS.get(this.url)
                     .then(response => {
                         this.totalPages = response.data.totalPages !== 0 ? response.data.totalPages : -1;
