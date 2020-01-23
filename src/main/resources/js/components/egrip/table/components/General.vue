@@ -47,6 +47,12 @@
                 }, {
                     name: 'Статус:',
                     item: this.ipData.status.name,
+                }, {
+                    name: 'Дата регистрации:',
+                    item: this.ipData.gosReg[0].dtReg,
+                }, {
+                    name: 'Дата ликвидации:',
+                    item: this.ipData.status.id !== 0 ?this.ipData.gosReg[this.ipData.gosReg.length - 1].dtReg : '',
                 }]
 
             }
