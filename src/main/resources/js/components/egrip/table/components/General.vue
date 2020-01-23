@@ -15,7 +15,7 @@
                 title: 'Общие',
                 name: 'General',
                 tableData: [{
-                    name: 'Фамилия',
+                    name: 'Фамилияя',
                     item: this.ipData.name.surname,
                 }, {
                     name: 'Имя',
