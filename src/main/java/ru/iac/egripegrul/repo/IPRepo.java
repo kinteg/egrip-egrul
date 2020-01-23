@@ -22,8 +22,6 @@ public interface IPRepo extends JpaRepository<IP, String> {
                     String inn,
                     LocalDate dtStart,
                     LocalDate dtEnd,
-                    Pageable pageable);
-
-
-
+                    Pageable pageable
+            );
 }

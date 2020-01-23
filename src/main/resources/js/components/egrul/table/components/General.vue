@@ -57,9 +57,6 @@
                     name: 'Способ образования оридического лица',
                     item: this.ulData.vidreg.name,
                 }, {
-                    name: 'Дата регистрации',
-                    item: this.ulData.dtregstart,
-                }, {
                     name: 'Размер капитала (руб.)',
                     item: this.ulData.capital.summa,
                 }, {
@@ -68,6 +65,12 @@
                 }, {
                     name: 'Статус',
                     item: this.ulData.status.name,
+                }, {
+                    name: 'Дата регистрации',
+                    item: this.ulData.dtregstart,
+                }, {
+                    name: 'Дата ликвидации',
+                    item: this.ulData.dtregend,
                 }]
 
             }
