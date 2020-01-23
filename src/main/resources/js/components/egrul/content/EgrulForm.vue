@@ -84,7 +84,7 @@
         padding: 13px 32px;
         color: #fff;
         cursor: pointer;
-        font-size: 120%;
+        font-size: 16px;
         font-family: 'PdfIntextCondPro-Bold';
         letter-spacing: 1px;
         line-height: 20px;
@@ -102,6 +102,5 @@
         margin: 0;
         padding: 0;
     }
-
 
 </style>

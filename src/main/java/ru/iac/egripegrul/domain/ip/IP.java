@@ -3,7 +3,7 @@ package ru.iac.egripegrul.domain.ip;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import ru.iac.egripegrul.domain.sp.RegOrg;
-import ru.iac.egripegrul.domain.sp.Stat;
+import ru.iac.egripegrul.domain.sp.StatIp;
 
 import javax.persistence.*;
 import java.util.List;
@@ -27,7 +27,7 @@ public class IP {
 
     @OneToOne
     @JoinColumn(name = "idstatus")
-    private Stat status;
+    private StatIp status;
 
     @OneToOne
     @JoinColumn(name = "idregorg")

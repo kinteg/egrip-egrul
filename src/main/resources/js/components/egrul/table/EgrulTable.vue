@@ -1,5 +1,5 @@
 <template>
-    <el-collapse v-if="ulData != null">
+    <el-collapse v-if="ulData != null" v-model="activeNames">
         <general :ulData="ulData"/>
         <full-name v-if="ulData.fl.length !== 0" :ulData="ulData.fl"/>
         <license v-if="ulData.licenzs.length !== 0" :ulData="ulData.licenzs"/>
@@ -28,7 +28,8 @@
         components: {Pf, Fss, Foms, Mns, Changes, License, FullName, General},
         data() {
             return {
-                ulData: null
+                ulData: null,
+                activeNames: "General"
             }
         },
 

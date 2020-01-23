@@ -8,9 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "spipstat")
+@Table(name = "spulstat")
 @Getter
-public class Stat {
+public class StatUl {
 
     @Id
     @Column(name = "id")

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import ru.iac.egripegrul.domain.fl.Dolgn;
 import ru.iac.egripegrul.domain.sp.RegOrg;
+import ru.iac.egripegrul.domain.sp.StatUl;
 import ru.iac.egripegrul.domain.sp.VidReg;
 
 import javax.persistence.*;
@@ -25,6 +26,10 @@ public class UL {
     private String inn;
     private String kpp;
     private String ogrn;
+
+    @OneToOne
+    @JoinColumn(name = "idstatus")
+    private StatUl status;
 
     @OneToOne
     @JoinColumn(name = "idregorg")

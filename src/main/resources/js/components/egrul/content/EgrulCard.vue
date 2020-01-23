@@ -3,7 +3,14 @@
         <el-card v-for="ul in ulData" class="box-card"
                  :key="ul.id">
             <div slot="header">
-                <router-link :to="'/egrul/' + ul.id" class="card-title"><span style="color: #1265a8">{{ul.name.fullName}}</span></router-link>
+                <router-link :to="'/egrul/' + ul.id" class="card-title">
+                    <span v-if="ul.status.id === 5" style="color: #1265a8">
+                        {{ul.name.fullName}}
+                    </span>
+                    <span v-else style="color: #ff0006">
+                        {{ul.name.fullName}} (Прекратило деятельность)
+                    </span>
+                </router-link>
             </div>
             <div class="text item" >
                 <a>ОГРН: {{ul.ogrn}}, ИНН: {{ul.inn}}</a><a v-if="ul.adr.telefon !== ''">, Телефон: {{ul.adr.telefon}} </a>

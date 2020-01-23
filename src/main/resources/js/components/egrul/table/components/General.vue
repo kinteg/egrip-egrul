@@ -65,6 +65,9 @@
                 }, {
                     name: 'Тип',
                     item: this.ulData.capital.vidCap.name,
+                }, {
+                    name: 'Статус',
+                    item: this.ulData.status.name,
                 }]
 
             }
